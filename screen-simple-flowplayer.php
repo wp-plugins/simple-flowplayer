@@ -2,9 +2,9 @@
 /*
 Plugin Name:	Simple Flowplayer
 Plugin URI:		http://screennetz.de/develop/simple-flowplayer/
-Description:	This plugin is a simple way to present medias from your media library or from extern source with the Flowplayer.
+Description:	Dieses Plugin ermöglicht das einfache präsentieren von Medien aus der Mediathek, sowie externen Quellen, mit hilfe des Flowplayers.
 Author:			Hannes Becker
-Version:		0.8
+Version:		0.9
 Author URI:		http://screennetz.de/
 */
 
@@ -145,31 +145,31 @@ class ScreenSimpleFlowplayer {
 	public function options() {		
 		if (!current_user_can('manage_options')) wp_die(__('You do not have sufficient permissions to access this page.'));				
 		echo('<div class="wrap">');
-		if ($this->saveOptions()) echo('<div id="message" class="updated fade"><p>Saved!</p></div>');
+		if ($this->saveOptions()) echo('<div id="message" class="updated fade"><p>Gespeichert!</p></div>');
 		echo('<div id="icon-options-general" class="icon32"><br /></div>');
-		echo('<h2>Simple Flowplayer Options</h2>');
+		echo('<h2>Simple Flowplayer Einstellungen</h2>');
 		echo('<div style="width: 40%; float: left">');
 		echo('<form method="post" action="options-general.php?page='.$this->pluginKey.'">');		
 		$this->options = get_option($this->pluginKey);
 		foreach ($this->options as $ext => $value) echo $this->defaultOptions($ext);		
 		echo('<input type="hidden" name="action" value="update" />');
-		echo('<p class="submit"><input name="saveOptions" type="submit" class="button-primary" value="'.__('Save Changes', false).'" /></p>');		
+		echo('<p class="submit"><input name="saveOptions" type="submit" class="button-primary" value="Speichern" /></p>');
 		echo('</form>');
 		echo('</div><div style="width: 59%; float: right; padding-left: 10px">');
 		echo('<form method="post" action="options-general.php?page='.$this->pluginKey.'">
 			<table class="widefat" style="margin-top: 1em; width: 250px">
-				<thead><tr><th scope="col">Create new file extension</th></tr></thead>
- 				<tbody><tr><td style="text-align: center"><input type="text" name="newExtension" style="width: 90%" /><br /><input name="newExtensionSubmit" type="submit" class="button-primary" value="'.__('Add', false).'" /></td></tr></tbody>
+				<thead><tr><th scope="col">Datei-Typ anlegen</th></tr></thead>
+ 				<tbody><tr><td style="text-align: center"><input type="text" name="newExtension" style="width: 90%" /><br /><input name="newExtensionSubmit" type="submit" class="button-primary" value="Anlegen" /></td></tr></tbody>
  			</table>
  			</form>
  			<form method="post" action="options-general.php?page='.$this->pluginKey.'">
 			<table class="widefat" style="margin-top: 1em; width: 250px">
-				<thead><tr><th scope="col">Delete a file extension</th></tr></thead>
+				<thead><tr><th scope="col">Datei-Typ entfernen</th></tr></thead>
  				<tbody><tr><td style="text-align: center"><select name="deleteExtension" style="width: 90%" /><option value=""></option>');
 		foreach ($this->options as $ext => $val) {
 			if ($ext != 'Default') echo('<option value="'.$ext.'">'.$ext.'</option>');
 		}
-		echo('	</select><br /><input name="deleteExtensionSubmit" type="submit" class="button-primary" value="'.__('Delete', false).'" /></td></tr></tbody>
+		echo('	</select><br /><input name="deleteExtensionSubmit" type="submit" class="button-primary" value="L&ouml;schen" /></td></tr></tbody>
  			</table>
  			</form>
  			<table class="widefat" style="margin-top: 1em; width: 250px">
