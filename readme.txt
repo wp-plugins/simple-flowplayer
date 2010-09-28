@@ -3,7 +3,7 @@ Contributors: tumichnix
 Tags: media, flowplayer, player, flash, audio, mp3, flv
 Requires at least: 3.0
 Tested up to: 3.0.1
-Stable tag: 0.8
+Stable tag: 0.8.1
 
 This plugin is a simple way to present medias from your media library or from extern source with the Flowplayer.
 
@@ -15,11 +15,11 @@ This plugin is a simple way to present medias from your media library or from ex
 
 Simple Flowplayer [(http://screennetz.de/develop/simple-flowplayer/)](http://screennetz.de/develop/simple-flowplayer/)
 
-* [Docs](http://screennetz.de/develop/simple-flowplayer/) - [FAQ](http://screennetz.de/develop/simple-flowplayer/) - [Support](http://screennetz.de/develop/simple-flowplayer/)
+* [FAQ](http://screennetz.de/develop/simple-flowplayer/) - [Support](http://screennetz.de/develop/simple-flowplayer/)
 
 == Installation ==
 
-1. Upload the entire `screen_simple_flowplayer` folder to the `/wp-content/plugins/` directory.
+1. Upload the entire `screen-simple-flowplayer` folder to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 
 You will find a new entry 'Simple Flowplayer' in settings menu in your WordPress admin panel.
@@ -28,12 +28,14 @@ For basic usage, you can also have a look at the [plugin homepage](http://screen
 
 == Screenshots ==
 
-1. screenshot-1.png
+Coming soon!
 
 == Changelog ==
 
-= 0.8 =
+= 0.8.1 "
+* Bugfix: No URL in Player
 
+= 0.8 =
 * First version
 
 == Upgrade Notice ==
