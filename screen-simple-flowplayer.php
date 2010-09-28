@@ -118,10 +118,10 @@ class ScreenSimpleFlowplayer {
 		
 		$globalOptions = get_option($this->pluginKey);
 		$optionKey = (array_key_exists($ext, $globalOptions)) ? $ext : 'Default';		
-		$globalOptions[$optionKey] = array_merge($notSavedParams, $globalOptions[$optionKey]);		
+		$globalOptions[$optionKey] = array_merge($notSavedParams, $globalOptions[$optionKey]);
 		
-		$this->playerParams[$this->playerId] = shortcode_atts($globalOptions[$optionKey], $notSavedParams);
-		$this->playerParams[$this->playerId]['ext'] = $ext;						
+		$this->playerParams[$this->playerId] = shortcode_atts($globalOptions[$optionKey], $this->playerParams[$this->playerId]);
+		$this->playerParams[$this->playerId]['ext'] = $ext;		
 		
 		$player = '<div style="margin-top: 3px; display:block; width:'.$this->playerParams[$this->playerId]['width'].'px; height:'.$this->playerParams[$this->playerId]['height'].'px;" id="'.$this->playerId.'"></div>';
 		$player .= '<script type="text/javascript" language="JavaScript">
