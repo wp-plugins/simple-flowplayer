@@ -4,7 +4,7 @@ Plugin Name:	Simple Flowplayer
 Plugin URI:		http://screennetz.de/develop/simple-flowplayer/
 Description:	Dieses Plugin ermöglicht das einfache präsentieren von Medien aus der Mediathek, sowie externen Quellen, mit hilfe des Flowplayers.
 Author:			Hannes Becker
-Version:		0.9
+Version:		0.9.1
 Author URI:		http://screennetz.de/
 */
 
@@ -72,7 +72,7 @@ class ScreenSimpleFlowplayer {
 	 * @return void
 	 */
 	public function init() {		
-		$this->pluginUrl = WP_PLUGIN_URL.'/screen-simple-flowplayer';		
+		$this->pluginUrl = WP_PLUGIN_URL.'/simple-flowplayer';		
 		if (!is_admin()) {
 			wp_enqueue_script($this->pluginKey, $this->pluginUrl.'/flowplayer/flowplayer-'.$this->flowplayerVersion.'.min.js');
 			add_shortcode($this->shortcode, array($this, 'player'));				

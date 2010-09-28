@@ -4,7 +4,7 @@ Donate link: http://screennetz.de
 Tags: media, flowplayer, player
 Requires at least: 2.9
 Tested up to: 3.0.1
-Stable tag: 0.9
+Stable tag: 0.9.1
 
 Dieses Plugin ermöglicht das einfache präsentieren von Medien aus der Mediathek, sowie externen Quellen, mit hilfe des Flowplayers.
 
@@ -33,6 +33,9 @@ Für weitere Einstellungen besuchen Sie bitte die [Plugin-Homepage](http://scree
 Coming soon!
 
 == Changelog ==
+
+= 0.9.1 =
+* Fix für Wordpress-Auto-Plugin-Installer
 
 = 0.9 =
 * Erste stabilie Version
