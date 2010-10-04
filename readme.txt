@@ -1,7 +1,7 @@
 === Simple Flowplayer ===
 Contributors: tumichnix
 Donate link: http://screennetz.de
-Tags: media, flowplayer, player
+Tags: media, flowplayer, player, plugin, audio, simple, post, posts, social media, youtube
 Requires at least: 2.9
 Tested up to: 3.0.1
 Stable tag: 0.9.2
