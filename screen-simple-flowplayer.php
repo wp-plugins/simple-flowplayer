@@ -4,7 +4,7 @@ Plugin Name:	Simple Flowplayer
 Plugin URI:		http://screennetz.de/develop/simple-flowplayer/
 Description:	Dieses Plugin ermöglicht das einfache präsentieren von Medien aus der Mediathek, sowie externen Quellen, mit hilfe des Flowplayers.
 Author:			tumichnix
-Version:		0.9.1
+Version:		0.9.2
 Author URI:		http://screennetz.de/
 */
 
