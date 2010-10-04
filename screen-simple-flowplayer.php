@@ -94,7 +94,14 @@ class ScreenSimpleFlowplayer {
 	 * @return viod
 	 */
 	public function deactivation() {
-		delete_option($this->pluginKey);		
+				
+	}
+
+	/**
+	 * uninstall this plugin
+	 */
+	public function uninstall() {
+		delete_option($this->pluginKey);
 	}
 	
 	/**
@@ -311,5 +318,6 @@ class ScreenSimpleFlowplayer {
 $screenSimpleFlowplayer = new ScreenSimpleFlowplayer();
 register_activation_hook(__FILE__, array($screenSimpleFlowplayer, 'activation'));
 register_deactivation_hook(__FILE__, array($screenSimpleFlowplayer, 'deactivation'));
+register_uninstall_hook(__FILE__, array($screenSimpleFlowplayer, 'uninstall'));
 add_action('init', array($screenSimpleFlowplayer, 'init'));
 ?>
