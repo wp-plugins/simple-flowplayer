@@ -34,6 +34,9 @@ Coming soon!
 
 == Changelog ==
 
+= 0.9.3 =
+* Getestet mit Wordpress 3.1
+
 = 0.9.2 =
 * Uninstall-Hook hinzugefügt
 
