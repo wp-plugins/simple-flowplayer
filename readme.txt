@@ -3,8 +3,8 @@ Contributors: tumichnix
 Donate link: http://screennetz.de
 Tags: media, flowplayer, player, plugin, audio, simple, post, posts, social media, youtube
 Requires at least: 2.9
-Tested up to: 3.2.1
-Stable tag: 0.9.4
+Tested up to: 3.3.1
+Stable tag: 0.9.5
 
 Dieses Plugin ermöglicht das einfache präsentieren von Medien aus der Mediathek, sowie externen Quellen, mit hilfe des Flowplayers.
 
@@ -33,6 +33,9 @@ Für weitere Einstellungen besuchen Sie bitte die [Plugin-Homepage](http://scree
 Coming soon!
 
 == Changelog ==
+
+= 0.9.5 =
+* Getestet mit Wordpress 3.3.1
 
 = 0.9.4 =
 * Neue Option um den Flowplayer auf wmode="opaque" zu setzen
